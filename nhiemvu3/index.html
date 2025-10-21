@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Infographic & Video</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet" />
+  <style>
+    /* Reset và cơ bản */
+    * {
+      box-sizing: border-box;
+      transition: all 0.3s ease;
+    }
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      margin: 0;
+      padding: 40px 20px;
+      color: #fff;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+    }
+    .container {
+      background: #fff;
+      color: #333;
+      max-width: 900px;
+      width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+      padding: 30px 40px;
+    }
+    h1 {
+      font-weight: 600;
+      font-size: 2.6rem;
+      margin-bottom: 0.3em;
+      text-align: center;
+      color: #4b2e83;
+      letter-spacing: 1px;
+    }
+    .description {
+      font-weight: 300;
+      font-size: 1.1rem;
+      text-align: center;
+      margin-bottom: 2.5rem;
+      color: #666;
+    }
+
+    /* Infographic style */
+    .infographic {
+      display: block;
+      max-width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 10px 30px rgba(75,46,131,0.25);
+      margin: 0 auto 3rem auto;
+      transform-style: preserve-3d;
+      perspective: 600px;
+    }
+    .infographic:hover {
+      transform: scale(1.05) rotateY(5deg);
+      box-shadow: 0 15px 40px rgba(75,46,131,0.45);
+    }
+
+    /* Video style */
+    video {
+      display: block;
+      max-width: 100%;
+      margin: 0 auto 3rem auto;
+      border-radius: 12px;
+      box-shadow: 0 10px 30px rgba(118,75,162,0.3);
+      cursor: pointer;
+      outline: none;
+    }
+    video:hover, video:focus {
+      box-shadow: 0 15px 50px rgba(118,75,162,0.55);
+      transform: scale(1.03);
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      font-size: 0.9rem;
+      color: #999;
+      border-top: 1px solid #eee;
+      padding-top: 15px;
+      font-style: italic;
+      user-select: none;
+      font-weight: 700; /* In đậm */
+    }
+
+    /* Responsive */
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 1.8rem;
+      }
+      .description {
+        font-size: 1rem;
+      }
+      .container {
+        padding: 20px 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Lợi Ích Của Công Nghệ Số</h1>
+    <p class="description">
+      Khám phá cách công nghệ số hỗ trợ học tập hiệu quả hơn
+    </p>
+
+    <!-- Infographic -->
+    <img src="infographicloiichcongngheso.png" alt="Infographic minh họa nhiệm vụ 2" class="infographic" />
+
+    <!-- Video -->
+    <video controls preload="metadata" tabindex="0" aria-label="Video minh họa nhiệm vụ 2">
+      <source src="1021.mp4" type="video/mp4" />
+      Trình duyệt của bạn không hỗ trợ video.
+    </video>
+
+    <footer>
+      Baitap © 2025 của Ngọc Quí được cấp phép theo CC BY 4.0. Nội dung được hỗ trợ bởi AI GitHub Copilot.
+    </footer>
+  </div>
+</body>
+</html>
